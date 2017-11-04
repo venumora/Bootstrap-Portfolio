@@ -26,7 +26,7 @@ body {
 	background: url("../images/bg.png");
 	font-size: 16px;
 	margin: 0;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 
 h1 {
@@ -153,7 +153,11 @@ a {
 }
 
 .portfolio-list .portfolio-list-item:nth-child(odd) {
-	margin-right: 40px;
+	padding-right: 20px;
+}
+
+.portfolio-list .portfolio-list-item:nth-child(even) {
+	padding-left: 20px;
 }
 
 .display-inline-block {
@@ -300,7 +304,11 @@ a {
 	font-size: 1em;
 }
 
-@media screen and (max-width: 768px) {
+.portfolio-picture {
+	width: 100%;
+}
+
+@media screen and (max-width: 767px) {
 	.about-me .margin-right-25-px {
 		margin-right: 0px;
 	}
@@ -339,5 +347,17 @@ a {
 	.container {
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	.portfolio-list .portfolio-list-item {
+		width: 100%;
+	}
+	
+	.portfolio-list .portfolio-list-item:nth-child(odd) {
+		padding-right: 0px;
+	}
+
+	.portfolio-list .portfolio-list-item:nth-child(even) {
+		padding-left: 0px;
 	}
 }
