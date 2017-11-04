@@ -25,7 +25,7 @@ body {
 	background: url("../images/bg.png");
 	font-size: 16px;
 	margin: 0;
-	margin-bottom: 60px;
+	margin-bottom: 70px;
 }
 
 h1 {
@@ -351,7 +351,7 @@ a {
 	.portfolio-list .portfolio-list-item {
 		width: 100%;
 	}
-	
+
 	.portfolio-list .portfolio-list-item:nth-child(odd) {
 		padding-right: 0px;
 	}
