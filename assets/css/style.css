@@ -2,9 +2,22 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
+html {
+	position: relative;
+	min-height: 100%;
 	margin: 0;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
+	background-color: #666;
+	border-top: 5px solid #4aaaa5;
+	text-align: center;
+	color: #FFF;
 }
 
 body {
@@ -12,6 +25,8 @@ body {
 	color: #777;
 	background: url("../images/bg.png");
 	font-size: 16px;
+	margin: 0;
+	margin-bottom: 100px;
 }
 
 h1 {
@@ -24,15 +39,6 @@ h2 {
 
 h3 {
 	font-size: 1.5em;
-}
-
-footer {
-	background-color: #666;
-	border-top: 5px solid #4aaaa5;
-	width: 100%;
-	text-align: center;
-	color: #FFF;
-	height: 61px;
 }
 
 li {
@@ -52,6 +58,14 @@ h1, h2, h3, h4, h5 {
 a {
 	color: #ccc;
 	text-decoration: none;
+}
+.row.no-gutter {
+	margin: 0px;
+}
+
+.no-gutter [class*='col-'] {
+	padding-right:0;
+	padding-left:0;
 }
 
 .wrapper {
@@ -77,7 +91,6 @@ a {
 
 .navigation .navigation-item:last-child .navigation-item-action {
 	border-right: none;
-	padding: 26px 0px 26px 26px;
 }
 
 .main {
@@ -92,14 +105,11 @@ a {
 }
 
 .main-section {
-	width: 650px;
 	background-color: #FFF;
-	margin-right: 40px;
 	border: 2px solid #ddd;
 }
 
 .main-aside {
-	width: 270px;
 	background-color: #FFF;
 	border: 2px solid #ddd;
 }
@@ -108,6 +118,7 @@ a {
 	background-color: #4aaaa5;
 	text-align: center;
 	color: #FFF;
+	width: 100%;
 }
 
 .bg-teal {
@@ -149,8 +160,18 @@ a {
 	display: inline-block;
 }
 
-.navigation-item-action:hover {
+.navbar-default .navigation-item .navigation-item-action:hover {
 	color: #4aaaa5;
+}
+
+.navbar-default .navigation-item.active .navigation-item-action {
+	color: #4aaaa5;
+	background-color: transparent;
+}
+
+.navbar-default .navigation-item.active .navigation-item-action:hover {
+	color: #777;
+	background-color: transparent;
 }
 
 .social-icon {
@@ -180,6 +201,9 @@ a {
 	position: absolute;
 }
 
+.row.padding-bottom-0-px {
+	padding-bottom: 0px;
+}
 .padding-20-px {
 	padding: 20px;
 }
@@ -194,6 +218,14 @@ a {
 
 .gray-boder-bottom-large {
 	border-bottom: 2px solid #CCC;
+}
+
+.padding-right-25px {
+	padding-right: 25px;
+}
+
+.margin-right-25-px {
+	margin-right: 25PX;
 }
 
 .gray-boder-bottom-small {
@@ -212,12 +244,20 @@ a {
 	margin-bottom: 40px;
 }
 
+.margin-bottom-30-px {
+	margin-bottom: 40px;
+}
+
+.margin-bottom-20-px {
+	margin-bottom: 20px;
+}
+
 .margin-top-30-px {
 	margin-top: 30px;
 }
 
 .profile-picture {
-	margin-right: 25px;
+	width: 100%;
 }
 
 .about-me {
@@ -258,4 +298,46 @@ a {
 	color: #FFF;
 	width: 100px;
 	font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+	.about-me .margin-right-25-px {
+		margin-right: 0px;
+	}
+
+	#navbar .nav.navbar-right {
+		float: right !important;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-right: -15px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.navbar-header {
+		width: 100%;
+	}
+
+	.about-me .margin-right-25-px {
+		margin-right: 0px;
+	}
+
+	.navigation, .navigation .navigation-group {
+		width: 100%;
+	}
+
+	.navigation-item {
+		width: 33%;
+		text-align: center;
+	}
+
+	.navigation-item .navigation-item-action {
+		display: block;
+		padding: 0px;
+	}
+
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }

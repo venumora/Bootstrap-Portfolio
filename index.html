@@ -5,70 +5,93 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Venu Mora - Home</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header class="clearfix">
-			<div class="main">
-				<h1 class="display-inline-block site-logo float-left padding-20-px">Venu Mora</h1>
-				<nav class="navigation float-right">
-					<ul class="navigation-group display-inline-block">
-						<li class="float-left navigation-item"><a  class="navigation-item-action" href="index.html">About</a></li>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="row no-gutter">
+				<div class="navbar-header col-xs-4 col-md-3 col-md-offset-1">
+					<h1 class="display-inline-block site-logo padding-20-px">Venu Mora</h1>
+				</div>
+				<div id="navbar" class="navigation col-xs-8 col-md-8">
+					<ul class="nav navbar-nav navbar-right navigation-group">
+						<li class="float-left navigation-item active"><a  class="navigation-item-action" href="index.html">About</a></li>
 						<li class="float-left navigation-item"><a  class="navigation-item-action" href="portfolio.html">Portfolio</a></li>
 						<li class="float-left navigation-item"><a  class="navigation-item-action" href="contact.html">Contact</a></li>
 					</ul>
-				</nav>
+				</div>
 			</div>
-		</header>
-		<div class="main main-content clearfix">
-			<section class="main-section padding-30-px float-left">
-				<h2 class="padding-bottom-30-px gray-boder-bottom-large">About Me</h2>
-				<article class="about-me margin-top-30-px">
-					<picture>
-					  <source srcset="https://placehold.it/536X360" media="(max-width: 640px)">
-					  <source srcset="https://placehold.it/300X200" media="(max-width: 768px)">						
-					  <source srcset="https://placehold.it/406X250" media="(max-width: 980px)">
-					  <source srcset="https://placehold.it/200X150">
-					  <img class="profile-picture float-left" src="https://placehold.it/200X150" alt="Profile Picture">
-					</picture>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus rerum, praesentium soluta dolore vitae nostrum perspiciatis asperiores aperiam totam suscipit maxime commodi aliquam?</p>
-					<p>Itaque iste deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita quasi numquam sit maiores doloribus modi necessitatibus sequi voluptates inventore voluptatum blanditiis debitis ducimus delectus quaerat neque, itaque iste deserunt?</p>
-				</article>
+		</div>
+	</nav>
+
+	<main role="main" class="container">
+		<div class="row no-gutter">
+			<section class="main-section col-lg-7 col-lg-offset-1 col-md-6 col-md-offset-1 margin-bottom-30-px">
+				<div class="row no-gutter padding-30-px padding-bottom-0-px">
+					<div class="col-xs-12">
+						<h2 class="padding-bottom-30-px gray-boder-bottom-large">About Me</h2>
+					</div>
+				</div>
+				<div class="row no-gutter padding-30-px">
+					<article class="about-me">
+						<div class="col-lg-7 col-md-6 col-sm-6 margin-right-25-px">
+							<picture>
+							  <source srcset="https://placehold.it/536X360" media="(max-width: 640px)">
+							  <source srcset="https://placehold.it/300X200" media="(max-width: 768px)">						
+							  <source srcset="https://placehold.it/406X250" media="(max-width: 980px)">
+							  <source srcset="https://placehold.it/200X150">
+							  <img class="margin-bottom-20-px profile-picture float-left" src="https://placehold.it/200X150" alt="Profile Picture">
+							</picture>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus rerum, praesentium soluta dolore vitae nostrum perspiciatis asperiores aperiam totam suscipit maxime commodi aliquam?</p>
+						<p>Itaque iste deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita quasi numquam sit maiores doloribus modi necessitatibus sequi voluptates inventore voluptatum blanditiis debitis ducimus delectus quaerat neque, itaque iste deserunt?</p>
+					</article>
+				</div>
 			</section>
-			<aside class="main-aside padding-30-px float-left">
-				<h3 class="padding-bottom-30-px gray-boder-bottom-small">Connect with me</h3>
-				<ul class="margin-top-30-px">
-					<li class="float-left">
-						<a  target="_blank" href="https://github.com/venumora">
-							<img class="social-icon" src="assets/images/git.svg" alt="github">
-						</a>
-					</li>
-					<li class="float-left margin-left-13-px">
-						<a  target="_blank" href="https://www.linkedin.com/in/venumora">
-							<img class="social-icon" src="assets/images/linkedin.png" alt="linkedin">
-						</a>
-					</li>
-					<li class="float-left margin-left-13-px">
-						<a  target="_blank" href="https://stackoverflow.com/users/1573709/venu-mora">
-							<img class="social-icon" src="assets/images/stackoverflow.png" alt="stackoverflow">
-						</a>
-					</li>
-				</ul>
+			<aside class="main-aside col-lg-3 col-lg-offset-1 col-md-4 col-md-offset-1">
+				<div class="row no-gutter padding-30-px padding-bottom-0-px">
+					<div class="col-xs-12">
+						<h3 class="padding-bottom-30-px gray-boder-bottom-small">Connect with me</h3>
+					</div>
+				</div>
+				<div class="row no-gutter padding-30-px">
+					<ul>
+						<li class="float-left">
+							<a  target="_blank" href="https://github.com/venumora">
+								<img class="social-icon" src="assets/images/git.svg" alt="github">
+							</a>
+						</li>
+						<li class="float-left margin-left-13-px">
+							<a  target="_blank" href="https://www.linkedin.com/in/venumora">
+								<img class="social-icon" src="assets/images/linkedin.png" alt="linkedin">
+							</a>
+						</li>
+						<li class="float-left margin-left-13-px">
+							<a  target="_blank" href="https://stackoverflow.com/users/1573709/venu-mora">
+								<img class="social-icon" src="assets/images/stackoverflow.png" alt="stackoverflow">
+							</a>
+						</li>
+					</ul>
+				</div>
 			</aside>
 		</div>
-		<div class="push"></div>
-	</div>
-	<footer>
+	</main>
+
+    <footer class="footer pos-a">
+      <div class="container">
 		<i class="fa fa-copyright padding-20-px" aria-hidden="true">
 			Copyright 2016 Venu Kumar Mora
 		</i>
-	</footer>
+      </div>
+    </footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
